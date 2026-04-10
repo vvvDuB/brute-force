@@ -9,14 +9,12 @@ def word_match(text: str) -> int:
     
     return counter 
 
-
 def brute_force(text: str) -> str:
     decrypted = []
     
     for key in range(26):
         result = []
         shift = key % 26
-        result = []
 
         for c in text:
             if ("A" <= c <= "Z") or ("a" <= c <= "z"):
@@ -39,7 +37,7 @@ def main()-> None:
         w_count = word_match(el[1])
         if w_count:
             print(f"Key = {el[0]}") 
-            print(f"Text = {el[1]}")
+            print(f"{el[1]}")
 
 if __name__ == "__main__":
     main()
